@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longin Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg,#cde9b7,#a8d5a2);
+            overflow: hidden;
+        }
+        .blob{
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(50px);
+            opacity: 0.7;
+        }
+        .blob1{
+            width: 250px;
+            height: 250px;
+            background: #7ed957;
+            top: 10%;
+            left: 10%;
+        }
+        .blob2{
+            width:200px;
+            height:200px;
+            background:#9fff00;
+            right: 10%;
+            top: 20%;
+        }
+        .login-card{
+            width: 350px;
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            background: rgba(255,255,255,0.2);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .login-card h1{
+            color: #5a7f6e;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .input-group{
+            margin:15px 0;
+        }
+        input{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius: 10px;
+            outline: none;
+            background: rgba(255,255,255,0.5)
+        }
+        button{
+            width: 100%;
+            padding:12px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 15px;
+            background:#7ed957;
+            color: whitesmoke;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            
+        }
+        button:hover{
+            background:#5ec13b;
+        }
+    </style>  
+    </head>
+    <body>
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+
+
+        <div class="login-card">
+            <h1>LOGIN</h1>
+            <form action="/login"method="Post">
+
+        <div class="input-group">
+            <input type="text" placeholder="Username" name="Username" required>
+        </div>
+        
+         
+        <div class="input-group">
+            <input type="password" placeholder="Password" name="Password" required >
+           
+        </div>
+
+        <button type="submit">Login</button>
+        </form>
+        </div>
+        
+        </body>
+        </html>
